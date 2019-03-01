@@ -15,7 +15,7 @@ class operationJson:
             return rdata
     '''获得json的内容，并以字符串的形式输出，“”，’‘为字典'''
     def getRequestData(self,row):
-        return json.dumps(self.getReadJson()[self.excel.get_requestdata(row=row)],ensure_ascii=False)
+        return json.dumps(self.getReadJson()[self.excel.get_requestdata(row=row)])
 
 # opear=operationJson()
 # print(opear.getRequestData(1),type)
